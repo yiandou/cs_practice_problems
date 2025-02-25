@@ -26,7 +26,7 @@ def play_game():
         bet = int(input("How much do you wish to bet?\n"))
         color = input("Pick a color to bet on.\n")
 
-        for i in range(16):
+        for i in range(random.randint(0, 128)):
             print("Spinning" + "."*i)
             time.sleep(0.25)
 
