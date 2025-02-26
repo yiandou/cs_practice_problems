@@ -24,6 +24,10 @@ def play_game():
     while True:
         landed = spin_wheel(spaces)
         bet = int(input("How much do you wish to bet?\n"))
+        if bet > money:
+            print("You don't have enough money")
+            continue
+
         color = input("Pick a color to bet on.\n")
 
         for i in range(random.randint(0, 128)):
